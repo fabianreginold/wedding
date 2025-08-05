@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Fabian & Sarah | Wedding</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <style>
+        :root {
+            --white: #ffffff;
+            --ivory: #FFFFF0;
+            --light-beige: #F8F8F8;
+            --wedding-green: #1b4d2e;
+            --gold: #D4AF37;
+            --soft-gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--light-beige);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            position: relative;
+        }
+
+        /* Header with Hero Image */
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        .couple-names {
+            font-family: 'Parisienne', cursive;
+            font-size: 6rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            color: var(--white);
+        }
+
+        .wedding-date {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+
+        .scripture-verse {
+            font-family: 'Parisienne', cursive;
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .scripture-reference {
+            font-family: 'Parisienne', cursive;
+            font-size: 1.8rem;
+            color: var(--gold);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .countdown-container {
+            margin-top: 3rem;
+        }
+
+        .countdown-item {
+            display: inline-block;
+            margin: 0 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--white);
+        }
+
+        /* Navigation */
+        .main-nav {
+            background-color: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: var(--dark-gray);
+            margin: 0 1rem;
+            padding: 1.5rem 0;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--wedding-green);
+        }
+
+        .nav-link.active {
+            color: var(--wedding-green);
+            font-weight: 600;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--wedding-green);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: var(--wedding-green);
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: var(--wedding-green);
+        }
+
+        .section-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: var(--dark-gray);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-content {
+            background-color: var(--white);
+            padding: 4rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 4rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+        }
+
+        .couple-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.5s ease;
+        }
+
+        .couple-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Story Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--wedding-green);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--white);
+            border: 4px solid var(--wedding-green);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+            text-align: right;
+        }
+
+        .right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .left::after {
+            right: -12px;
+        }
+
+        .right::after {
+            left: -12px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 3px solid var(--wedding-green);
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--wedding-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--wedding-green);
+        }
+
+        /* Gallery Section */
+        .gallery-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: var(--white);
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* Wedding Details */
+        .detail-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--wedding-green);
+        }
+
+        .detail-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .detail-icon {
+            font-size: 3rem;
+            color: var(--wedding-green);
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--wedding-green);
+        }
+
+        .detail-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-gray);
+        }
+
+        /* RSVP Section */
+        .rsvp-section {
+            background: url('https://images.unsplash.com/photo-1511285560929-80ec456a73cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat fixed;
+            position: relative;
+            padding: 6rem 0;
+            color: var(--white);
+        }
+
+        .rsvp-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(27, 77, 46, 0.9);
+        }
+
+        .rsvp-form {
+            background-color: var(--white);
+            padding: 4rem;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .form-control {
+            padding: 1rem;
+            border: 1px solid var(--soft-gray);
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: var(--wedding-green);
+        }
+
+        .btn-primary {
+            background-color: var(--wedding-green);
+            border: none;
+            padding: 1rem 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--wedding-green);
+            opacity: 0.9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--wedding-green);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Parisienne', cursive;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+
+        .footer-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Wedding Chatbot */
+        .chat-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border: 1px solid var(--wedding-green);
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background: var(--wedding-green);
+            color: var(--white);
+            padding: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-close {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .chat-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.2rem;
+            background: var(--white);
+        }
+
+        .chat-input-area {
+            display: flex;
+            padding: 1rem;
+            background: var(--white);
+            border-top: 1px solid var(--soft-gray);
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 0.8rem;
+            border: 1px solid var(--soft-gray);
+            border-radius: 25px;
+            outline: none;
+            margin-right: 0.8rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .chat-send {
+            background: var(--wedding-green);
+            color: var(--white);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-send:hover {
+            transform: scale(1.1);
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding: 0.8rem 1rem;
+            border-radius: 15px;
+            max-width: 80%;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+
+        .user-message {
+            background: var(--light-beige);
+            margin-left: auto;
+            border: 1px solid var(--wedding-green);
+        }
+
+        .bot-message {
+            background: rgba(27, 77, 46, 0.1);
+            border: 1px solid rgba(27, 77, 46, 0.3);
+        }
+
+        /* Embedded Chat Styles */
+        .embedded-chat-container {
+            border: 1px solid var(--wedding-green);
+            border-radius: 10px;
+            padding: 1.5rem;
+            background-color: var(--light-beige);
+        }
+
+        .embedded-chat-body {
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--soft-gray);
+        }
+
+        .embedded-chat-input-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .guest-entry {
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .guest-entry:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        /* RSVP Notification */
+        .rsvp-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1.5rem;
+            background-color: var(--wedding-green);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1050;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transform: translateX(150%);
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            max-width: 350px;
+        }
+
+        .rsvp-notification.show {
+            transform: translateX(0);
+        }
+
+        .rsvp-notification i {
+            font-size: 1.8rem;
+        }
+
+        .rsvp-notification-content {
+            flex: 1;
+        }
+
+        .rsvp-notification h4 {
+            margin: 0 0 0.5rem 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+        }
+
+        .rsvp-notification p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .rsvp-notification-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .couple-names {
+                font-size: 4.5rem;
+            }
+            
+            .scripture-verse {
+                font-size: 2rem;
+            }
+            
+            .scripture-reference {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 3rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left, .right {
+                left: 0;
+                text-align: left;
+            }
+            
+            .left::after, .right::after {
+                left: 21px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .couple-names {
+                font-size: 3.5rem;
+            }
+            
+            .wedding-date {
+                font-size: 1.5rem;
+            }
+            
+            .scripture-verse {
+                font-size: 1.8rem;
+            }
+            
+            .scripture-reference {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+            
+            .about-content, .rsvp-form {
+                padding: 2rem;
+            }
+            
+            .detail-card {
+                padding: 2rem;
+            }
+
+            .chat-popup {
+                width: 300px;
+                height: 450px;
+                right: 10px;
+            }
+
+            .rsvp-notification {
+                top: 10px;
+                right: 10px;
+                max-width: calc(100% - 20px);
+            }
+
+            .embedded-chat-body {
+                height: 250px;
+            }
+            
+            .embedded-chat-input-area {
+                flex-direction: column;
+            }
+            
+            #embeddedChatSend {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .couple-names {
+                font-size: 2.8rem;
+            }
+            
+            .scripture-verse {
+                font-size: 1.5rem;
+            }
+            
+            .scripture-reference {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .nav-link {
+                margin: 0 0.5rem;
+                padding: 1rem 0;
+                font-size: 0.9rem;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.8rem;
+            }
+
+            .chat-popup {
+                width: 280px;
+                height: 400px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1 class="couple-names animate__animated animate__fadeInDown">Fabian  & Sarah</h1>
+            <p class="wedding-date animate__animated animate__fadeIn animate__delay-1s">December 27, 2025</p>
+            <p class="scripture-verse animate__animated animate__fadeIn animate__delay-2s">He has made everything beautiful in his time</p>
+            <p class="scripture-reference animate__animated animate__fadeIn animate__delay-3s">Ecclesiastes 3:11</p>
+            
+            <div class="countdown-container animate__animated animate__fadeIn animate__delay-4s">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="main-nav navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Wedding Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Love Story</h2>
+            <p class="section-subtitle">How we met and fell in love</p>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-content">
+                        <p class="about-text">Fabian and Sarah started getting to know each other mid-December 2024, after meeting through our church. Sarah's first impression of Fabian was that he was warm and genuine. The first thing Fabian noticed about Sarah was her smile.</p>
+                        <p class="about-text">Fabian and Sarah are thankful for God's miracle in their lives, and they ask for your prayers as they begin this beautiful journey together.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://i.ibb.co/R4Mzv9cT/hand.png" alt="Couple" class="img-fluid couple-image">
+                </div>
+            </div>
+            
+            <!-- Timeline -->
+            <div class="timeline mt-5">
+                <div class="timeline-item left animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2024</div>
+                        <h3 class="timeline-title">First Meeting</h3>
+                        <p>We met through our church community. The connection was instant and blessed.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2025</div>
+                        <h3 class="timeline-title">Meeting the Families & Engagement</h3>
+                        <p>We introduced each other to our families, who immediately gave their blessings, and got engaged!</p>
+                    </div>
+                </div>
+                <div class="timeline-item left animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <div class="timeline-date">February 2025</div>
+                        <h3 class="timeline-title">First Date</h3>
+                        <p>Korean barbecue in the midst of a Canadian blizzard - a memorable start to our romance!</p>
+                    </div>
+                </div>
+                <div class="timeline-item right animate__animated animate__fadeIn">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025</div>
+                        <h3 class="timeline-title">Engagement Party</h3>
+                        <p>Celebrated our upcoming marriage with friends and family at a joyful gathering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embedded Chat -->
+            <div class="row mt-5 animate__animated animate__fadeIn">
+                <div class="col-12">
+                    <div class="about-content">
+                        <h3 class="text-center mb-4" style="color: var(--wedding-green);">Get to Know Us Better</h3>
+                        <div class="embedded-chat-container">
+                            <div class="embedded-chat-body" id="embeddedChatBody">
+                                <div class="message bot-message">
+                                    <strong>Wedding Assistant:</strong> Hi there! I'm Joy, here to help you learn more about Fabian and Sarah. Ask me anything about how they met, their engagement, or wedding details!
+                                </div>
+                            </div>
+                            <div class="embedded-chat-input-area">
+                                <input class="form-control" id="embeddedChatInput" placeholder="Ask about Fabian and Sarah..." type="text">
+                                <button class="btn btn-primary" id="embeddedChatSend" style="margin-left: 10px;">
+                                    <i class="fas fa-paper-plane"></i> Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section bg-light" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="section-subtitle">Moments we cherish</p>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/7NGHqX7C/image4.webp" alt="Surrounded by Love" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Celebration of Love and Unity</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/WWTbgZ9K/image5.webp" alt="A timeless moment" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Hearts filled with gratitude and Love</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/Z6fbZXJf/image6.webp" alt="Gallery Image 3" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Prayerfully Forward</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/hwqKt8J/image7.webp" alt="Gallery Image 4" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Engagement Party</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/M5G9Lmkw/gallery3.webp" alt="Gallery Image 5" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Family Introductions</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://i.ibb.co/ymCxjQsG/gallery1.webp"" alt="Gallery Image 6" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <h4>Order of Service</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section class="section" id="details">
+        <div class="container">
+            <h2 class="section-title">Wedding Details</h2>
+            <p class="section-subtitle">Join us on our special day</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <h3 class="detail-title">Ceremony & Reception</h3>
+                        <p class="detail-text">
+                            <strong>New Testament Church</strong><br>
+                            40 Whitenack Rd, Basking Ridge, NJ 07920, United States<br><br>
+                            <strong>Ceremony:</strong> December 27, 2025 at 10:20 AM<br>
+                            <strong>Reception:</strong> December 27, 2025 at 1:30 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp-section" id="rsvp">
+        <div class="container">
+            <h2 class="section-title text-white">RSVP</h2>
+            <p class="section-subtitle text-white">Please let us know if you'll be joining us</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="rsvp-form" id="rsvpForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Mailing Address" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" id="attending" name="attending" required>
+                                    <option value="">Will you attend?</option>
+                                    <option value="Yes">Yes, I'll be there!</option>
+                                    <option value="No">No, I can't make it</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <select class="form-control" id="guestCount" name="guestCount" required>
+                                    <option value="">Number of people</option>
+                                    <option value="1">1 person (just me)</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7">7 people</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Guest Details Container -->
+                        <div id="guestDetailsContainer" style="display: none;">
+                            <h5 class="text-center mb-3" style="color: var(--wedding-green);">Additional Guest Information</h5>
+                            <div id="additionalGuests"></div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" id="dietary" name="dietary" placeholder="Any dietary restrictions or special requests?"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit RSVP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Fabian & Sarah</div>
+            <p class="footer-text">Thank you for being part of our journey. We can't wait to celebrate with you on December 27, 2025!</p>
+            
+            <p class="copyright">© 2025 Fabian & Sarah's Wedding. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Wedding Chatbot -->
+    <div class="chat-popup">
+        <div class="chat-header">
+            <span><i class="fas fa-robot"></i> Wedding Assistant</span>
+            <button class="chat-close" id="chatCloseButton">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="message bot-message">
+                <strong>Wedding Bot:</strong> Hello! I'm Joy, your wedding assistant. I can help answer questions about Fabian and Sarah's wedding on December 27, 2025. What would you like to know?
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input class="chat-input" id="chatInput" placeholder="Ask about the wedding..." type="text"/>
+            <button class="chat-send" id="chatSendButton">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- RSVP Notification -->
+    <div class="rsvp-notification" id="rsvpNotification">
+        <i class="fas fa-check-circle"></i>
+        <div class="rsvp-notification-content">
+            <h4>RSVP Received!</h4>
+            <p>Thank you for your response. We look forward to celebrating with you!</p>
+        </div>
+        <button class="rsvp-notification-close" id="rsvpNotificationClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = new Date("December 27, 2025 10:20:00").getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Change nav link active state on scroll
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Chat functionality
+        const chatCloseButton = document.getElementById('chatCloseButton');
+        const chatSendButton = document.getElementById('chatSendButton');
+        const chatInput = document.getElementById('chatInput');
+        const chatBody = document.getElementById('chatBody');
+        
+        // Close chat
+        chatCloseButton.addEventListener('click', function() {
+            document.querySelector('.chat-popup').style.display = 'none';
+        });
+
+        // Send message function
+        async function sendMessage() {
+            const message = chatInput.value.trim();
+            
+            if (!message) return;
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user-message';
+            userMsg.innerHTML = `<strong>You:</strong> ${message}`;
+            chatBody.appendChild(userMsg);
+            
+            chatInput.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            // Show typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'message bot-message';
+            typingIndicator.innerHTML = `<strong>Wedding Bot:</strong> <em>Typing...</em>`;
+            chatBody.appendChild(typingIndicator);
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            try {
+                // Send message to backend
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+
+                // Remove typing indicator
+                chatBody.removeChild(typingIndicator);
+
+                // Add bot response
+                const botMsg = document.createElement('div');
+                botMsg.className = 'message bot-message';
+                botMsg.innerHTML = `<strong>Wedding Bot:</strong> ${data.response}`;
+                chatBody.appendChild(botMsg);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            } catch (error) {
+                console.error('Error:', error);
+                // Remove typing indicator
+                chatBody.removeChild(typingIndicator);
+                
+                // Add error message
+                const errorMsg = document.createElement('div');
+                errorMsg.className = 'message bot-message';
+                errorMsg.innerHTML = `<strong>Wedding Bot:</strong> I'm having trouble answering right now. Could you try again later?`;
+                chatBody.appendChild(errorMsg);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        }
+
+        // Event listeners
+        chatSendButton.addEventListener('click', sendMessage);
+        
+        // Handle Enter key in chat input
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Embedded Chat Functionality
+        const embeddedChatSend = document.getElementById('embeddedChatSend');
+        const embeddedChatInput = document.getElementById('embeddedChatInput');
+        const embeddedChatBody = document.getElementById('embeddedChatBody');
+
+        async function sendEmbeddedMessage() {
+            const message = embeddedChatInput.value.trim();
+            
+            if (!message) return;
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user-message';
+            userMsg.innerHTML = `<strong>You:</strong> ${message}`;
+            embeddedChatBody.appendChild(userMsg);
+            
+            embeddedChatInput.value = '';
+            embeddedChatBody.scrollTop = embeddedChatBody.scrollHeight;
+
+            // Show typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'message bot-message';
+            typingIndicator.innerHTML = `<strong>Wedding Assistant:</strong> <em>Typing...</em>`;
+            embeddedChatBody.appendChild(typingIndicator);
+            embeddedChatBody.scrollTop = embeddedChatBody.scrollHeight;
+
+            try {
+                // Use the same backend endpoint as the popup chat
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+
+                // Remove typing indicator
+                embeddedChatBody.removeChild(typingIndicator);
+
+                // Add bot response
+                const botMsg = document.createElement('div');
+                botMsg.className = 'message bot-message';
+                botMsg.innerHTML = `<strong>Wedding Assistant:</strong> ${data.response}`;
+                embeddedChatBody.appendChild(botMsg);
+                embeddedChatBody.scrollTop = embeddedChatBody.scrollHeight;
+            } catch (error) {
+                console.error('Error:', error);
+                // Remove typing indicator
+                embeddedChatBody.removeChild(typingIndicator);
+                
+                // Add error message
+                const errorMsg = document.createElement('div');
+                errorMsg.className = 'message bot-message';
+                errorMsg.innerHTML = `<strong>Wedding Assistant:</strong> I'm having trouble answering right now. Could you try again later?`;
+                embeddedChatBody.appendChild(errorMsg);
+                embeddedChatBody.scrollTop = embeddedChatBody.scrollHeight;
+            }
+        }
+
+        // Event listeners
+        embeddedChatSend.addEventListener('click', sendEmbeddedMessage);
+        embeddedChatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendEmbeddedMessage();
+            }
+        });
+
+        // Guest Details Handling
+        const guestCountSelect = document.getElementById('guestCount');
+        const guestDetailsContainer = document.getElementById('guestDetailsContainer');
+        const additionalGuestsDiv = document.getElementById('additionalGuests');
+
+        guestCountSelect.addEventListener('change', function() {
+            const guestCount = parseInt(this.value);
+            
+            if (guestCount > 1) {
+                guestDetailsContainer.style.display = 'block';
+                additionalGuestsDiv.innerHTML = '';
+                
+                // Create fields for additional guests
+                for (let i = 1; i < guestCount; i++) {
+                    const guestDiv = document.createElement('div');
+                    guestDiv.className = 'guest-entry mb-3 p-3';
+                    guestDiv.style.border = '1px solid var(--soft-gray)';
+                    guestDiv.style.borderRadius = '8px';
+                    guestDiv.innerHTML = `
+                        <h6 class="mb-3">Guest #${i + 1}</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <input type="text" class="form-control guest-first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <input type="text" class="form-control guest-last-name" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                    `;
+                    additionalGuestsDiv.appendChild(guestDiv);
+                }
+            } else {
+                guestDetailsContainer.style.display = 'none';
+            }
+        });
+
+        // RSVP Form Handling
+        const rsvpForm = document.getElementById('rsvpForm');
+        const rsvpNotification = document.getElementById('rsvpNotification');
+        const rsvpNotificationClose = document.getElementById('rsvpNotificationClose');
+
+        function showConfetti() {
+            const confettiSettings = {
+                target: 'rsvpForm',
+                max: 150,
+                size: 1.5,
+                animate: true,
+                props: ['circle', 'square', 'triangle', 'line'],
+                colors: [[27, 77, 46], [212, 175, 55], [255, 255, 240]],
+                clock: 25,
+                rotate: true,
+                start_from_edge: true,
+                respawn: true
+            };
+            
+            const confetti = new ConfettiGenerator(confettiSettings);
+            confetti.render();
+            
+            setTimeout(() => {
+                confetti.clear();
+            }, 3000);
+        }
+
+        function showNotification() {
+            rsvpNotification.classList.add('show');
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                rsvpNotification.classList.remove('show');
+            }, 5000);
+        }
+
+        rsvpNotificationClose.addEventListener('click', function() {
+            rsvpNotification.classList.remove('show');
+        });
+
+        rsvpForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get main guest info
+            const formData = {
+                firstName: document.getElementById('firstName').value.trim(),
+                lastName: document.getElementById('lastName').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                address: document.getElementById('address').value.trim(),
+                attending: document.getElementById('attending').value,
+                guestCount: document.getElementById('guestCount').value,
+                dietary: document.getElementById('dietary').value.trim() || '',
+                additionalGuests: []
+            };
+
+            // Validate required fields
+            if (!formData.firstName || !formData.lastName || !formData.email || !formData.address || !formData.attending || !formData.guestCount) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Get additional guest info if applicable
+            const guestCount = parseInt(formData.guestCount);
+            if (guestCount > 1) {
+                const guestEntries = document.querySelectorAll('.guest-entry');
+                let hasIncompleteGuests = false;
+                
+                // Check all guests first
+                for (let i = 0; i < guestEntries.length; i++) {
+                    const entry = guestEntries[i];
+                    const firstName = entry.querySelector('.guest-first-name').value.trim();
+                    const lastName = entry.querySelector('.guest-last-name').value.trim();
+                    
+                    if (!firstName || !lastName) {
+                        hasIncompleteGuests = true;
+                        break;
+                    }
+                }
+                
+                if (hasIncompleteGuests) {
+                    alert('Please fill in names for all additional guests.');
+                    return; // Now this properly exits the function
+                }
+                
+                // If all guests are complete, add them to formData
+                guestEntries.forEach((entry) => {
+                    const guestData = {
+                        firstName: entry.querySelector('.guest-first-name').value.trim(),
+                        lastName: entry.querySelector('.guest-last-name').value.trim()
+                    };
+                    formData.additionalGuests.push(guestData);
+                });
+            }
+
+            console.log('Submitting RSVP data:', formData); // Debug log
+
+            // Send to server
+            fetch('/api/submit-rsvp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                console.log('Response status:', response.status); // Debug log
+                console.log('Response ok:', response.ok); // Debug log
+                
+                if (!response.ok) {
+                    return response.json().then(err => {
+                        throw new Error(err.message || `HTTP error! status: ${response.status}`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response data:', data); // Debug log
+                
+                if (data.status === 'success') {
+                    // Use canvas-confetti instead of ConfettiGenerator
+                    confetti({
+                        particleCount: 100,
+                        spread: 70,
+                        origin: { y: 0.6 }
+                    });
+                    
+                    showNotification();
+                    rsvpForm.reset();
+                    guestDetailsContainer.style.display = 'none';
+                    additionalGuestsDiv.innerHTML = '';
+                } else {
+                    alert(data.message || 'There was an error submitting your RSVP.');
+                }
+            })
+            .catch(error => {
+                console.error('RSVP Submission Error:', error);
+                alert(`There was an error submitting your RSVP: ${error.message}. Please try again later.`);
+            });
+        });
+    </script>
+</body>
+</html>
