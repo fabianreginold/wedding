@@ -1,0 +1,275 @@
+2025-08-05 11:24:46,576 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:24:51,723 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.61:8080
+2025-08-05 11:24:51,723 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 11:24:51,725 - werkzeug - INFO -  * Restarting with stat
+2025-08-05 11:24:52,194 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:24:52,264 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:24:52,283 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-05 11:24:56,814 - __main__ - INFO - API Call: GET /
+2025-08-05 11:24:56,815 - __main__ - DEBUG - Headers: {'Host': '10.0.0.61:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Referer': 'http://10.0.0.61:8080/?', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:24:56,818 - werkzeug - INFO - 10.0.0.61 - - [05/Aug/2025 11:24:56] "GET / HTTP/1.1" 200 -
+2025-08-05 11:24:58,299 - __main__ - INFO - API Call: GET /
+2025-08-05 11:24:58,300 - __main__ - DEBUG - Headers: {'Host': '10.0.0.61:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Referer': 'http://10.0.0.61:8080/?', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:24:58,300 - werkzeug - INFO - 10.0.0.61 - - [05/Aug/2025 11:24:58] "GET / HTTP/1.1" 200 -
+2025-08-05 11:25:21,164 - __main__ - INFO - API Call: GET /
+2025-08-05 11:25:21,165 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:25:21,166 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:25:21] "GET / HTTP/1.1" 200 -
+2025-08-05 11:25:21,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:25:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-05 11:25:26,695 - __main__ - INFO - API Call: GET /
+2025-08-05 11:25:26,696 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:25:26,697 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:25:26] "GET / HTTP/1.1" 200 -
+2025-08-05 11:25:30,281 - __main__ - INFO - API Call: GET /
+2025-08-05 11:25:30,281 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Purpose': 'prefetch;prerender', 'Purpose': 'prefetch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:25:30,282 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:25:30] "GET / HTTP/1.1" 200 -
+2025-08-05 11:25:30,567 - __main__ - INFO - API Call: GET /
+2025-08-05 11:25:30,568 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:25:30,569 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:25:30] "GET / HTTP/1.1" 200 -
+2025-08-05 11:29:43,158 - __main__ - INFO - API Call: GET /
+2025-08-05 11:29:43,162 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:29:43,170 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:29:43] "GET / HTTP/1.1" 200 -
+2025-08-05 11:29:44,007 - __main__ - INFO - API Call: GET /
+2025-08-05 11:29:44,011 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:29:44,013 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:29:44] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:17,754 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:17,757 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:17,759 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:17] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:18,171 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:18,172 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:18,173 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:18] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:27,669 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:27,670 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:27,670 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:27] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:28,059 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:28,059 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:28,060 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:28] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:48,466 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:30:53,561 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.61:8080
+2025-08-05 11:30:53,561 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 11:30:53,563 - werkzeug - INFO -  * Restarting with stat
+2025-08-05 11:30:54,088 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:30:54,152 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:30:54,168 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-05 11:30:54,262 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:54,262 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:54,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:54] "GET / HTTP/1.1" 200 -
+2025-08-05 11:30:55,132 - __main__ - INFO - API Call: GET /
+2025-08-05 11:30:55,132 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:30:55,133 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:30:55] "GET / HTTP/1.1" 200 -
+2025-08-05 11:31:39,452 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:31:44,539 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.61:8080
+2025-08-05 11:31:44,540 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 11:31:44,542 - werkzeug - INFO -  * Restarting with stat
+2025-08-05 11:31:45,087 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 11:31:45,161 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:31:45,179 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-05 11:31:49,031 - __main__ - INFO - API Call: GET /
+2025-08-05 11:31:49,032 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:31:49,034 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:31:49] "GET / HTTP/1.1" 200 -
+2025-08-05 11:31:49,945 - __main__ - INFO - API Call: GET /
+2025-08-05 11:31:49,945 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Sec-Ch-Ua-Mobile': '?0', 'Sec-Ch-Ua-Platform': '"macOS"', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'Sec-Fetch-Site': 'none', 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-User': '?1', 'Sec-Fetch-Dest': 'document', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 11:31:49,946 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:31:49] "GET / HTTP/1.1" 200 -
+2025-08-05 12:09:54,615 - werkzeug - INFO -  * Detected change in '/Users/apple/Documents/wedding/websitewedding/app.py', reloading
+2025-08-05 12:09:55,099 - werkzeug - INFO -  * Restarting with stat
+2025-08-05 12:09:56,026 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 12:09:56,075 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 12:09:56,096 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-05 12:10:08,109 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:08] "GET / HTTP/1.1" 200 -
+2025-08-05 12:10:45,907 - __main__ - INFO - API Call: POST /api/submit-rsvp
+2025-08-05 12:10:45,913 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '209', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 12:10:45,926 - __main__ - DEBUG - Request data: {'firstName': 'nixon', 'lastName': 'john', 'email': 'nos@gmail.com', 'address': '290 Lincoln Road', 'attending': 'Yes', 'guestCount': '2', 'dietary': ' no', 'additionalGuests': [{'firstName': 'evangelin', 'lastName': 'nixon'}]}
+2025-08-05 12:10:45,929 - __main__ - INFO - Received RSVP data: {
+  "firstName": "nixon",
+  "lastName": "john",
+  "email": "nos@gmail.com",
+  "address": "290 Lincoln Road",
+  "attending": "Yes",
+  "guestCount": "2",
+  "dietary": " no",
+  "additionalGuests": [
+    {
+      "firstName": "evangelin",
+      "lastName": "nixon"
+    }
+  ]
+}
+2025-08-05 12:10:45,963 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2025-08-05 12:10:46,052 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-05 12:10:46,257 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-08-05 12:10:46,288 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2025-08-05 12:10:47,678 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:10:47,834 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:10:48,189 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "POST /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8/values/%27rsvp%27:append?valueInputOption=RAW HTTP/1.1" 200 None
+2025-08-05 12:10:48,191 - __main__ - INFO - Successfully added 2 RSVP rows to Google Sheet
+2025-08-05 12:10:48,195 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:48] "POST /api/submit-rsvp HTTP/1.1" 200 -
+2025-08-05 12:25:27,696 - werkzeug - INFO -  * Detected change in '/Users/apple/Documents/wedding/websitewedding/app.py', reloading
+2025-08-05 12:25:28,404 - werkzeug - INFO -  * Restarting with stat
+2025-08-05 12:25:29,870 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-05 12:25:29,956 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 12:25:29,984 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-05 12:25:31,492 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:25:31] "GET / HTTP/1.1" 200 -
+2025-08-05 12:25:59,744 - __main__ - INFO - API Call: POST /api/submit-rsvp
+2025-08-05 12:25:59,745 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '202', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 12:25:59,745 - __main__ - DEBUG - Request data: {'firstName': 'donkey', 'lastName': 'monkey', 'email': 'donkey@gmail.com', 'address': 'heaven', 'attending': 'Yes', 'guestCount': '2', 'dietary': 'no', 'additionalGuests': [{'firstName': 'monkey', 'lastName': 'donkey'}]}
+2025-08-05 12:25:59,754 - __main__ - INFO - Received RSVP data: {
+  "firstName": "donkey",
+  "lastName": "monkey",
+  "email": "donkey@gmail.com",
+  "address": "heaven",
+  "attending": "Yes",
+  "guestCount": "2",
+  "dietary": "no",
+  "additionalGuests": [
+    {
+      "firstName": "monkey",
+      "lastName": "donkey"
+    }
+  ]
+}
+2025-08-05 12:25:59,765 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2025-08-05 12:25:59,892 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-05 12:26:00,093 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-08-05 12:26:00,120 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2025-08-05 12:26:00,798 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:26:00,967 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:26:01,182 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "POST /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8/values/%27rsvp%27:append?valueInputOption=RAW HTTP/1.1" 200 None
+2025-08-05 12:26:01,182 - __main__ - INFO - Successfully added 2 RSVP rows to Google Sheet
+2025-08-05 12:26:01,182 - __main__ - INFO - Sending success response: {'status': 'success', 'message': 'Thank you for your RSVP! We have received your response.', 'data': {'main_guest': 'donkey monkey', 'guest_count': '2', 'timestamp': '2025-08-05 12:26:00', 'rows_added': 2}}
+2025-08-05 12:26:01,192 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:26:01] "POST /api/submit-rsvp HTTP/1.1" 200 -
+2025-08-05 12:29:35,877 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:29:35] "GET / HTTP/1.1" 200 -
+2025-08-05 12:29:36,377 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:29:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-05 12:29:49,896 - __main__ - INFO - API Call: POST /api/submit-rsvp
+2025-08-05 12:29:49,898 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '172', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-05 12:29:49,905 - __main__ - DEBUG - Request data: {'firstName': 'nixon', 'lastName': 'john', 'email': 'fabianreginold@gmail.com', 'address': '34 Lincoln road', 'attending': 'Yes', 'guestCount': '1', 'dietary': '', 'additionalGuests': []}
+2025-08-05 12:29:49,907 - __main__ - INFO - Received RSVP data: {
+  "firstName": "nixon",
+  "lastName": "john",
+  "email": "fabianreginold@gmail.com",
+  "address": "34 Lincoln road",
+  "attending": "Yes",
+  "guestCount": "1",
+  "dietary": "",
+  "additionalGuests": []
+}
+2025-08-05 12:29:49,945 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2025-08-05 12:29:50,030 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-05 12:29:50,259 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-08-05 12:29:50,272 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2025-08-05 12:29:50,997 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:29:51,155 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-05 12:29:51,375 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "POST /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8/values/%27rsvp%27:append?valueInputOption=RAW HTTP/1.1" 200 None
+2025-08-05 12:29:51,376 - __main__ - INFO - Successfully added 1 RSVP rows to Google Sheet
+2025-08-05 12:29:51,376 - __main__ - INFO - Sending success response: {'status': 'success', 'message': 'Thank you for your RSVP! We have received your response.', 'data': {'main_guest': 'nixon john', 'guest_count': '1', 'timestamp': '2025-08-05 12:29:51', 'rows_added': 1}}
+2025-08-05 12:29:51,381 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:29:51] "POST /api/submit-rsvp HTTP/1.1" 200 -
+2025-08-06 01:03:19,043 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-06 01:03:24,189 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.61:8080
+2025-08-06 01:03:24,192 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-06 01:03:24,200 - werkzeug - INFO -  * Restarting with stat
+2025-08-06 01:03:25,820 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-06 01:03:25,962 - werkzeug - WARNING -  * Debugger is active!
+2025-08-06 01:03:26,018 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-06 01:03:27,939 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 01:03:27] "GET / HTTP/1.1" 200 -
+2025-08-06 02:01:23,221 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-06 02:01:28,287 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.61:8080
+2025-08-06 02:01:28,287 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-06 02:01:28,288 - werkzeug - INFO -  * Restarting with stat
+2025-08-06 02:01:28,775 - __main__ - INFO - Loaded 22 FAQ entries from faqs.json
+2025-08-06 02:01:28,830 - werkzeug - WARNING -  * Debugger is active!
+2025-08-06 02:01:28,844 - werkzeug - INFO -  * Debugger PIN: 144-267-703
+2025-08-06 02:03:49,448 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:03:49] "GET / HTTP/1.1" 200 -
+2025-08-06 02:05:46,184 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:05:46] "GET / HTTP/1.1" 200 -
+2025-08-06 02:07:22,312 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:07:22,316 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '53', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:07:22,319 - __main__ - DEBUG - Request data: {'message': 'hey joy, tell me about fabian and sarah'}
+2025-08-06 02:07:22,320 - __main__ - INFO - Chat request: hey joy, tell me about fabian and sarah
+2025-08-06 02:07:22,322 - __main__ - INFO - Sending question to Gemini: hey joy, tell me about fabian and sarah
+2025-08-06 02:07:22,471 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:07:24,976 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:07:24,983 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:07:24] "POST /chat HTTP/1.1" 200 -
+2025-08-06 02:07:47,603 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:07:47,604 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '42', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:07:47,605 - __main__ - DEBUG - Request data: {'message': 'thats cool, so how do i rsvp'}
+2025-08-06 02:07:47,605 - __main__ - INFO - Chat request: thats cool, so how do i rsvp
+2025-08-06 02:07:47,606 - __main__ - INFO - Sending question to Gemini: thats cool, so how do i rsvp
+2025-08-06 02:07:47,646 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:07:49,916 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:07:49,918 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:07:49] "POST /chat HTTP/1.1" 200 -
+2025-08-06 02:08:08,135 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:08:08,136 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '66', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:08:08,136 - __main__ - DEBUG - Request data: {'message': 'okay, tell me more about sarah? who on earth is she?'}
+2025-08-06 02:08:08,136 - __main__ - INFO - Chat request: okay, tell me more about sarah? who on earth is she?
+2025-08-06 02:08:08,142 - __main__ - INFO - Sending question to Gemini: okay, tell me more about sarah? who on earth is she?
+2025-08-06 02:08:08,147 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:08:09,375 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:08:09,377 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:08:09] "POST /chat HTTP/1.1" 200 -
+2025-08-06 02:08:21,973 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:08:21,976 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '44', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:08:21,977 - __main__ - DEBUG - Request data: {'message': 'lol...okay who is fabian then?'}
+2025-08-06 02:08:21,977 - __main__ - INFO - Chat request: lol...okay who is fabian then?
+2025-08-06 02:08:21,977 - __main__ - INFO - Sending question to Gemini: lol...okay who is fabian then?
+2025-08-06 02:08:21,996 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:08:23,885 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:08:23,888 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:08:23] "POST /chat HTTP/1.1" 200 -
+2025-08-06 02:08:37,659 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:08:37,660 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '54', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:08:37,661 - __main__ - DEBUG - Request data: {'message': "haha that's a joke, tell me how they met"}
+2025-08-06 02:08:37,661 - __main__ - INFO - Chat request: haha that's a joke, tell me how they met
+2025-08-06 02:08:37,661 - __main__ - INFO - Sending question to Gemini: haha that's a joke, tell me how they met
+2025-08-06 02:08:37,695 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:08:39,640 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:08:39,642 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:08:39] "POST /chat HTTP/1.1" 200 -
+2025-08-06 02:10:41,456 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:10:41] "GET / HTTP/1.1" 200 -
+2025-08-06 02:12:42,006 - __main__ - INFO - API Call: POST /api/submit-rsvp
+2025-08-06 02:12:42,007 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '264', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:12:42,007 - __main__ - DEBUG - Request data: {'firstName': 'Lissyma', 'lastName': 'aunty', 'email': 'lissyma@gmail.com', 'address': 'New jersey N2J 2P5', 'attending': 'Yes', 'guestCount': '3', 'dietary': 'none at all', 'additionalGuests': [{'firstName': 'rachel', 'lastName': 'john'}, {'firstName': 'herlin', 'lastName': 'abiya'}]}
+2025-08-06 02:12:42,007 - __main__ - INFO - Received RSVP data: {
+  "firstName": "Lissyma",
+  "lastName": "aunty",
+  "email": "lissyma@gmail.com",
+  "address": "New jersey N2J 2P5",
+  "attending": "Yes",
+  "guestCount": "3",
+  "dietary": "none at all",
+  "additionalGuests": [
+    {
+      "firstName": "rachel",
+      "lastName": "john"
+    },
+    {
+      "firstName": "herlin",
+      "lastName": "abiya"
+    }
+  ]
+}
+2025-08-06 02:12:42,016 - urllib3.util.retry - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2025-08-06 02:12:42,087 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2025-08-06 02:12:42,268 - urllib3.connectionpool - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2025-08-06 02:12:42,303 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sheets.googleapis.com:443
+2025-08-06 02:12:43,549 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-06 02:12:43,710 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "GET /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8?includeGridData=false HTTP/1.1" 200 None
+2025-08-06 02:12:43,990 - urllib3.connectionpool - DEBUG - https://sheets.googleapis.com:443 "POST /v4/spreadsheets/1ddmRlECMSSXMKnlG5T_SrO578DRZ5uONvUZALrTtj-8/values/%27rsvp%27:append?valueInputOption=RAW HTTP/1.1" 200 None
+2025-08-06 02:12:43,991 - __main__ - INFO - Successfully added 3 RSVP rows to Google Sheet
+2025-08-06 02:12:43,991 - __main__ - INFO - Sending success response: {'status': 'success', 'message': 'Thank you for your RSVP! We have received your response.', 'data': {'main_guest': 'Lissyma aunty', 'guest_count': '3', 'timestamp': '2025-08-06 02:12:43', 'rows_added': 3}}
+2025-08-06 02:12:43,992 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:12:43] "POST /api/submit-rsvp HTTP/1.1" 200 -
+2025-08-06 02:15:39,433 - __main__ - INFO - API Call: POST /chat
+2025-08-06 02:15:39,435 - __main__ - DEBUG - Headers: {'Host': '127.0.0.1:8080', 'Connection': 'keep-alive', 'Content-Length': '34', 'Sec-Ch-Ua-Platform': '"macOS"', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0', 'Sec-Ch-Ua': '"Opera";v="120", "Not-A.Brand";v="8", "Chromium";v="135"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Accept': '*/*', 'Origin': 'http://127.0.0.1:8080', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://127.0.0.1:8080/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+2025-08-06 02:15:39,436 - __main__ - DEBUG - Request data: {'message': 'any covid protocols?'}
+2025-08-06 02:15:39,436 - __main__ - INFO - Chat request: any covid protocols?
+2025-08-06 02:15:39,437 - __main__ - INFO - Sending question to Gemini: any covid protocols?
+2025-08-06 02:15:39,494 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): generativelanguage.googleapis.com:443
+2025-08-06 02:15:42,712 - urllib3.connectionpool - DEBUG - https://generativelanguage.googleapis.com:443 "POST /v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCJLUqVQt8g2TKPS_ztTAMlWONuZ-AKSuI HTTP/1.1" 200 None
+2025-08-06 02:15:42,716 - werkzeug - INFO - 127.0.0.1 - - [06/Aug/2025 02:15:42] "POST /chat HTTP/1.1" 200 -
