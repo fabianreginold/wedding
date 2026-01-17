@@ -342,7 +342,7 @@ def ask_gemini(question: str, context: str = None) -> str | None:
         - Sarah's first impression of Fabian was his warm and genuine nature
         - Fabian first noticed Sarah's beautiful smile
         - They got engaged in January 2025 after introducing each other to their families
-        - Wedding date: December 27, 2025
+        - Wedding date: March 7, 2026
         - Venue: New Testament Church, Basking Ridge, NJ
 
         {f"Additional context that might help: {context}" if context else ""}
